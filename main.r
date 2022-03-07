@@ -1,7 +1,8 @@
-data = read.csv("C:\\Users\\medok\\OneDrive\\Desktop\\Game-Recommendation\\Datasets\\average_time_play_full.csv", header=T, sep=",")
+data = read.csv("C:\\Users\\medok\\OneDrive\\Desktop\\Python\\Leauge of Legends\\forCurious\\datasets\\LeaugeOfLegends.csv", header=T, sep=",")
 
-hist(data$Battle.Academy)
-
+head(data)
+hist(data$blueTotalJungleMinionsKilled)
+ 
 rm(list = ls()) 
 
 detach("package:datasets", unload = TRUE)
